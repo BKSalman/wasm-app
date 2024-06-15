@@ -1,0 +1,13 @@
+package component:wasm-app@0.1.0;
+
+world something {
+    import wasi:logging/logging;
+    import wow;
+
+    export start: func();
+}
+
+interface wow {
+    hello-world: func() -> string;
+    add: func(a: s32, b: s32) -> s32;
+}

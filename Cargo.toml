@@ -1,0 +1,15 @@
+[package]
+name = "wasm-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.80"
+tokio = { version = "1.38.0", features = ["full"] }
+wasmtime = "21.0.1"
+wasmtime-wasi = "21.0.1"
+
+[package.metadata.component]
+package = "component:wasm-app"
+
+[package.metadata.component.target.dependencies]
