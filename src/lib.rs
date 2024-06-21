@@ -7,6 +7,10 @@ bindgen!({
 
 #[async_trait::async_trait]
 impl component::wasm_app::wow::Host for MyState {
+    async fn hello_world(&mut self) -> String {
+        println!("hellow_world was called");
+        String::from("Hello world!")
+    }
     async fn add(&mut self, a: i32, b: i32) -> i32 {
         println!("add was called");
         a + b

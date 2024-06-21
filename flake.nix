@@ -21,6 +21,7 @@
               targets = [ "wasm32-wasi" ];
             })
             wit-deps.packages.${system}.wit-deps
+            wabt
           ];
           
           nativeBuildInputs = [ ];
